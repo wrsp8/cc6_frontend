@@ -5,8 +5,8 @@ function borrar() {
 
 
 async function consultar() {
-    //const respuesta = await fetch("https://cc6-dbms.herokuapp.com/parseQuery", {
-    const respuesta = await fetch("http://localhost:5000/parseQuery", {
+    const respuesta = await fetch("https://cc6-dbms.herokuapp.com/parseQuery", {
+    //const respuesta = await fetch("http://localhost:5000/parseQuery", {
         method: 'post',
         headers: {
             'Content-Type': 'application/json'
