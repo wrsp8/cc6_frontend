@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="main.js"></script>
+    <title>SQL</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col s12 m6 push-m3">
+            <div class="card">
+                <div class="card-content">
+                    <h4>Sistema de bases de datos</h4>
+                    <textarea id="textarea"></textarea>
+                </div>
+                <div class="card-action">
+                    <a class="waves-effect waves-light btn" onclick="consultar()"><i class="material-icons left">check</i>CONSULTAR</a>
+                    <a class="waves-effect waves-light btn" onClick="borrar()"><i class="material-icons left">close</i>BORRAR</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s12 m6 push-m3">
+            <div class="card">
+                <div class="card-content">
+                    <h5>Resultados</h5>
+                    <div id="resultados">
+                    </div>
+                    <table id="tabla" class="striped"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
