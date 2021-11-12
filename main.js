@@ -11,7 +11,7 @@ async function consultar() {
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ query: document.getElementById("textarea").value })
+        body: JSON.stringify({ query: document.getElementById("textarea").value, origin: "ws" })
     }).then(function (response) {
         return response.text().then(function (text) {
             const resultado = document.getElementById("resultados");
