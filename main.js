@@ -18,7 +18,8 @@ async function consultar() {
             const respuesta = JSON.parse(text);
             resultado.innerHTML = respuesta.message;
             console.log("text " + text);
-
+            const hora = document.getElementById("hora");
+            hora.innerHTML = new Date().toLocaleString("sv-SE", {timeZone: "America/Guatemala"});
             const table = document.getElementById("tabla");
             table.innerHTML = '';
             if (typeof respuesta.table != 'undefined' && typeof respuesta.table.columns !='undefined') {
